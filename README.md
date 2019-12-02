@@ -11,7 +11,7 @@ User side pages(100% functional):
 1. Notifications
 2. Recrods
 3. Absence
-4. Statistics (graphic view)
+4. Statistics (graphic view) // 
 4.1. Annual payments (vertical bar chart)
 4.2. Hours per year (horizontal bar chart)
 4.3. Hours worked and absent (pie chart) 
