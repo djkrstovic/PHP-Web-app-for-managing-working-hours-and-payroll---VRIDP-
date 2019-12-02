@@ -1,0 +1,55 @@
+<?php
+    if (!defined('VALID_ENTRY')) {
+        die('Ilegalan pristup. Prijavicemo Vasu IP adresu policiji!');
+    }
+
+    require 'admin-session-check.php';
+  
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Novi korisnik </title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    
+    <body>
+        
+        
+        <div id="sredina">
+            
+            <div id="header">
+                <ul>
+                    <li><a class="active" href="ANotifPg.html">Obaveštenja</a></li>
+                    <li><a href="AUserPg.html">Korisnici</a></li>
+                    <li><a href="ARecordPg.html">Evidencija</a></li>
+                    <li style="float:right"><a href="#logout">LogOut</a></li>
+                </ul>
+            </div>
+            
+            
+            <div id="sadrzaj">
+                <div id="passch">
+                    <form id="forme" method="post" action="#">
+                        <input name="aime" type="text" class="izgledforme4" placeholder="Ime" required><br/><br/>
+                        <input name="aprezime" type="text" class="izgledforme4" placeholder="Prezime" required><br/><br/><br/>
+                        <input name="korisnickoime" type="text" class="izgledforme4" placeholder="Korisnicko ime" required><br/><br/>
+                        <input name="pass1" type="password" class="izgledforme4" placeholder="Lozinka" required><br/><br/>
+                        <input name="pass2" type="password" class="izgledforme4" placeholder="Ponovi lozinku" required><br/><br/><br/>
+                        <input type="submit" class="dugme" value="Kreiraj">
+                    </form>
+                </div>
+                
+            </div>
+            
+            
+            <div id="footer">
+                    <footer class="footer">Web aplikacija VRIDP</footer>
+            </div>
+        </div>
+    
+    </body>
+    
+    
+</html>
